@@ -36,7 +36,6 @@ A high-performance demonstration and launchpad for the **Perfox Autonomous AI Ag
 | **TypeScript 5** | Strict type-safety across workflows, pipeline stages, and navigation |
 | **Vite 5** | Ultra-fast HMR and optimized asset bundling (configured on port `3000`) |
 | **Tailwind CSS 3** | Cyber Ember dark design system with custom GPU-accelerated keyframe animations |
-| **Sharp** | High-precision alpha channel image processing for mascot assets |
 
 ---
 
@@ -56,11 +55,10 @@ demo-site/
 └── src/
     ├── App.tsx              # Root app orchestrator & URL safety checks
     ├── main.tsx             # React DOM root entry
-    ├── index.css            # Cyber Ember theme, ambient blurs, mascot keyframes
+    ├── index.css            # Cyber Ember theme, ambient blurs, keyframe animations
     ├── vite-env.d.ts        # TypeScript asset declarations (.png, .jpg)
     ├── assets/
-    │   ├── hero-scene.jpg   # Engine overview rendered visual scene
-    │   └── perfox-robot.png # Transparent Perfox AI robot mascot
+    │   └── hero-scene.jpg   # Engine overview rendered visual scene
     ├── components/
     │   ├── common/          # BrandMarks (Fox runner, wordmark, logo lockup)
     │   ├── layout/          # Navbar, Footer, BackgroundGlow
@@ -71,7 +69,7 @@ demo-site/
     │   └── index.ts         # TypeScript interfaces (WorkflowItem, PipelineStage)
     └── views/
         ├── LandingView.tsx      # Screen 1: Engine overview & use case cards
-        └── SandboxSetupView.tsx # Screen 2: Robot mascot & 6-stage sandbox pipeline
+        └── SandboxSetupView.tsx # Screen 2: Centered 6-stage sandbox pipeline
 ```
 
 ---
