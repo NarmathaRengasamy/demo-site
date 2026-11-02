@@ -95,7 +95,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-ink text-t1 font-sans relative selection:bg-accent/30 selection:text-white flex flex-col justify-between overflow-x-hidden w-full max-w-full">
+    <div className={`min-h-screen ${currentScreen === 2 ? 'h-screen overflow-hidden' : ''} bg-ink text-t1 font-sans relative selection:bg-accent/30 selection:text-white flex flex-col justify-between overflow-x-hidden w-full max-w-full`}>
       {/* Background Ambient Drifting Globs & Grid */}
       <BackgroundGlow />
 
@@ -111,7 +111,7 @@ export default function App() {
       />
 
       {/* Main Flow Container */}
-      <main className={`flex-1 relative z-10 ${currentScreen === 2 ? 'pt-0 flex flex-col justify-center' : 'pt-2 sm:pt-3'}`}>
+      <main className={`flex-1 relative z-10 ${currentScreen === 2 ? 'pt-0 flex flex-col justify-center items-center min-h-0' : 'pt-2 sm:pt-3'}`}>
         {currentScreen === 1 && (
           <LandingView
             onOpenDemo={handleOpenDemo}
@@ -135,7 +135,7 @@ export default function App() {
       />
 
       {/* Global Footer */}
-      <Footer />
+      <Footer compact={currentScreen === 2} />
     </div>
   );
 }
