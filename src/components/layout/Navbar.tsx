@@ -10,8 +10,8 @@ interface NavbarProps {
 
 export function Navbar({ currentScreen, onSelectScreen, onReset }: NavbarProps) {
   const steps = [
-    { num: 1, label: 'Engine' },
-    { num: 2, label: 'Sandbox Setup' },
+    { num: 1, label: 'Home' },
+    { num: 2, label: 'Demo Setup' },
   ];
 
   return (
@@ -19,7 +19,7 @@ export function Navbar({ currentScreen, onSelectScreen, onReset }: NavbarProps) 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-4">
         <LogoLockup onClick={onReset} />
 
-        {/* Step Flow Navigation Tracker (Engine | Sandbox Setup) */}
+        {/* Step Flow Navigation Tracker (Home | Demo Setup) */}
         <nav className="flex items-center gap-1 p-1 rounded-full bg-ink-2/90 border border-line shadow-inner">
           {steps.map((step) => {
             const active = currentScreen === step.num;
