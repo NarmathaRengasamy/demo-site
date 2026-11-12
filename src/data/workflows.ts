@@ -16,7 +16,7 @@ export function createDefaultStages(title: string): PipelineStage[] {
     },
     {
       id: 3,
-      title: `Deploying ${title} sandbox`,
+      title: `Deploying ${title} demo`,
       desc: 'Configuring domain actions, connectors & SLA policies.',
       time: '1.2s',
     },
@@ -74,7 +74,7 @@ export const WORKFLOWS: WorkflowItem[] = [
       },
       {
         id: 3,
-        title: 'Deploying Furniture Shop sandbox',
+        title: 'Deploying Furniture Shop demo',
         desc: 'Configured 3DStager AI, California warehouse inventory & freight tiers',
         time: '1.2s',
       },
@@ -130,7 +130,7 @@ export const WORKFLOWS: WorkflowItem[] = [
       },
       {
         id: 3,
-        title: 'Deploying Car Showroom sandbox',
+        title: 'Deploying Car Showroom demo',
         desc: 'Configured ValuationEngine, live test-drive advisor calendar & trade-in equity',
         time: '1.2s',
       },
@@ -186,7 +186,7 @@ export const WORKFLOWS: WorkflowItem[] = [
       },
       {
         id: 3,
-        title: 'Deploying E-commerce Site sandbox',
+        title: 'Deploying E-commerce Site demo',
         desc: 'Configured zero-human RMA generator, FedEx API & automated refund rules',
         time: '1.2s',
       },
@@ -242,7 +242,7 @@ export const WORKFLOWS: WorkflowItem[] = [
       },
       {
         id: 3,
-        title: 'Deploying Industrial Tape Co. sandbox',
+        title: 'Deploying Industrial Tape Co. demo',
         desc: 'Configured B2B quote generator, pallet dispatch & carton discount rules',
         time: '1.2s',
       },

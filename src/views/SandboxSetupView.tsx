@@ -134,7 +134,7 @@ export function SandboxSetupView({ workflow, onComplete, onBack }: SandboxSetupV
               </>
             ) : (
               <>
-                Initializing <span className="pf-grad-text">{targetTitle}</span> Sandbox
+                Initializing <span className="pf-grad-text">{targetTitle}</span> Demo
               </>
             )}
           </h1>
@@ -283,7 +283,7 @@ export function SandboxSetupView({ workflow, onComplete, onBack }: SandboxSetupV
             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
-            <span>Back to Engine Overview</span>
+            <span>Back to Home</span>
           </button>
 
           {isFullyReady && (
@@ -292,7 +292,7 @@ export function SandboxSetupView({ workflow, onComplete, onBack }: SandboxSetupV
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-from to-to text-[#1a0d06] text-xs font-bold font-sans hover:opacity-90 transition-all cursor-pointer shadow-[0_0_20px_rgba(255,106,44,0.4)]"
             >
               <span className="w-2 h-2 rounded-full bg-[#1a0d06] animate-ping" />
-              <span>Launch Sandbox Now →</span>
+              <span>Launch Demo Now →</span>
             </button>
           )}
         </div>

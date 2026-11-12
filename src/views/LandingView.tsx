@@ -56,7 +56,7 @@ export function LandingView({ onOpenDemo, onSelectWorkflow }: LandingViewProps) 
                 onClick={handleScrollToWorkflows}
                 className="inline-flex items-center justify-center gap-2.5 py-3.5 px-8 rounded-pill pf-btn-primary font-sans font-bold text-base shadow-ember-lg group hover:scale-[1.02] transition-all duration-300 cursor-pointer"
               >
-                <span>Explore demo workflows</span>
+                <span>Explore demo usecases</span>
                 <span className="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:translate-y-1">
                   arrow_downward
                 </span>
@@ -67,7 +67,7 @@ export function LandingView({ onOpenDemo, onSelectWorkflow }: LandingViewProps) 
             <div className="flex items-center gap-4 sm:gap-6 flex-wrap text-xs font-sans text-t2">
               <div className="flex items-center gap-1.5">
                 <span className="material-symbols-outlined text-[16px] text-accent">bolt</span>
-                <span>Instant sandbox</span>
+                <span>Instant demo</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="material-symbols-outlined text-[16px] text-accent">timer</span>
@@ -92,8 +92,8 @@ export function LandingView({ onOpenDemo, onSelectWorkflow }: LandingViewProps) 
           ════════════════════════════════════════════════════════ */}
       <section id="workflows-section" className="w-full pb-16 scroll-mt-24">
         <div className="flex items-center justify-between px-1 mb-5">
-          <span className="font-mono text-xs tracking-widest uppercase text-t3 font-bold">EXPLORE SPECIALIZED WORKFLOWS</span>
-          <span className="font-mono text-xs text-accent font-semibold">{WORKFLOWS.length} Sandboxes Ready</span>
+          <span className="font-mono text-xs tracking-widest uppercase text-t3 font-bold">EXPLORE SPECIALIZED USECASES</span>
+          <span className="font-mono text-xs text-accent font-semibold">{WORKFLOWS.length} Demos Ready</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
@@ -128,7 +128,7 @@ export function LandingView({ onOpenDemo, onSelectWorkflow }: LandingViewProps) 
               </div>
               <div className="flex items-center justify-between text-xs pt-2.5 border-t border-line/60">
                 <span className="font-mono text-t3 text-[11px] sm:text-xs">{wf.telemetry}</span>
-                <span className="font-mono font-medium text-accent text-xs group-hover:underline">Launch sandbox →</span>
+                <span className="font-mono font-medium text-accent text-xs group-hover:underline">Launch demo →</span>
               </div>
             </div>
           ))}
